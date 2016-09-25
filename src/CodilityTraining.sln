@@ -37,6 +37,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson_9_MaximumSlice", "Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumSlice", "Lesson_9_MaximumSlice\MaximumSlice\MaximumSlice.csproj", "{7C416F6F-6A5A-47BC-A531-A50D9F261D82}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson_8_Dominator", "Lesson_8_Dominator", "{8B76E06F-6938-4EDE-B967-C1B53F71D3E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominator", "Lesson_8_Dominator\Dominator\Dominator.csproj", "{91A49E64-87CE-4D64-8BF8-DB46931AB299}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,10 @@ Global
 		{7C416F6F-6A5A-47BC-A531-A50D9F261D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C416F6F-6A5A-47BC-A531-A50D9F261D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C416F6F-6A5A-47BC-A531-A50D9F261D82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A49E64-87CE-4D64-8BF8-DB46931AB299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A49E64-87CE-4D64-8BF8-DB46931AB299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A49E64-87CE-4D64-8BF8-DB46931AB299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A49E64-87CE-4D64-8BF8-DB46931AB299}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,5 +111,6 @@ Global
 		{5EDADBE6-37EF-4065-B42A-320FC13D9C7C} = {DAAA50A8-AA14-4B1A-B41B-2D0FCD28738A}
 		{73FEDC19-5661-477C-AA36-B422E690E052} = {DAAA50A8-AA14-4B1A-B41B-2D0FCD28738A}
 		{7C416F6F-6A5A-47BC-A531-A50D9F261D82} = {3BC1CAAE-70A9-4148-B1ED-2A9E3933316F}
+		{91A49E64-87CE-4D64-8BF8-DB46931AB299} = {8B76E06F-6938-4EDE-B967-C1B53F71D3E4}
 	EndGlobalSection
 EndGlobal
