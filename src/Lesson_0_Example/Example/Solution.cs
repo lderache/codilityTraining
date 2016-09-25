@@ -10,29 +10,19 @@ namespace Example
     {
         public int Solution(int[] A)
         {
-            long prefix = A[0];
-            long suffix = (from item in A select (long)item).Sum() - A[0];
             int N = A.Length;
+            if (N == 0)
+                return -1;
 
-            // special case if P = 0
-            if (suffix == 0)
-                return 0;
+            long prefix = 0;
+            long sum = (from item in A select (long)item).Sum();
 
-            for (int i = 1; i < N - 1; i++)
+            for (int i = 0; i < N; i++)
             {
-                if (i - 1 > 0)
-                    prefix += A[i - 1];
-                suffix -= A[i];
-
-                if (prefix == suffix)
+                long suffix = sum - prefix - (long)A[i];
+                if (suffix == prefix)
                     return i;
-
-                // Special case if P = N-1
-                if (i == (N - 2))
-                {
-                    if ((prefix + A[i]) == 0)
-                        return i;
-                }
+                prefix += (long)A[i];
             }
 
             // Default, no equilibrium found

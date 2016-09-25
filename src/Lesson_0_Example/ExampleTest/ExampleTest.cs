@@ -21,7 +21,7 @@ namespace ExampleTest
         [Test]
         public void Example_Test_P_Equal_N_Minus_1()
         {
-            int[] A = new int[] { 1, 1, 1, 1, 1, 1, 1, -7, 0 };
+            int[] A = new int[] { 1, 1, 1, 1, 1, 1, 1, 0, 7 };
             ExampleSolution ex = new ExampleSolution();
 
             var result = ex.Solution(A);
@@ -50,5 +50,50 @@ namespace ExampleTest
 
             Assert.AreEqual(2, result);
         }
+
+        [Test]
+        public void Example_No_Equilibrium()
+        {
+            int[] A = new int[] { 1, 2147483647, 0 };
+            ExampleSolution ex = new ExampleSolution();
+
+            var result = ex.Solution(A);
+
+            Assert.AreEqual(-1, result);
+        }
+
+        [Test]
+        public void Example_Sum_0()
+        {
+            int[] A = new int[] { 0, 0, 0 };
+            ExampleSolution ex = new ExampleSolution();
+
+            var result = ex.Solution(A);
+
+            Assert.AreEqual(0, result);
+        }
+
+        [Test]
+        public void Example_Single()
+        {
+            int[] A = new int[] { 1000 };
+            ExampleSolution ex = new ExampleSolution();
+
+            var result = ex.Solution(A);
+
+            Assert.AreEqual(0, result);
+        }
+
+        [Test]
+        public void Example_Empty()
+        {
+            int[] A = new int[] { };
+            ExampleSolution ex = new ExampleSolution();
+
+            var result = ex.Solution(A);
+
+            Assert.AreEqual(-1, result);
+        }
+
     }
 }
